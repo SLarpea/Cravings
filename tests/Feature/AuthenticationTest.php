@@ -43,5 +43,6 @@ class AuthenticationTest extends TestCase
             ->assertJsonStructure([
                 "access_token"
             ]);
+        $this->assertAuthenticated();
     }
 }
